@@ -2,13 +2,13 @@
 为LightGBM定制的RSCV(Randomized Search CV)，阶段性保存搜索结果，带CV，带早停的，不受sklearn框架制约的 lightgbm 定制RandomSearchCV，欢迎大家下载使用
 
 # 回归
-    from lgb_custom_rscv import RandomizedSearchCV
+    from lgb_rscv import RandomizedSearchCV
     rscv = RandomizedSearchCV(n_iter=20)
     for i in range(20):
     	rscv.fit(x_train, y_train)
     	rscv.results_store(path='../output/rscv_results{}.xls'.format(i))
 # 分类
-    from lgb_custom_rscv import RandomizedSearchCV
+    from lgb_rscv import RandomizedSearchCV
     rscv = RandomizedSearchCV(objective='multiclass'， n_iter=20)
     for i in range(20):
     	rscv.fit(x_train, y_train)

@@ -1,4 +1,5 @@
 # RSCV for LightGBM
+RSCV (Randomized SearchCV), customized for LightGBM phase save search results, with CV, with early stop, not restricted by the sklearn framework of lightgbm custom RandomSearchCV, welcome to download and use.
 为LightGBM定制的RSCV(Randomized Search CV)，阶段性保存搜索结果，带CV，带早停的，不受sklearn框架制约的 lightgbm 定制RandomSearchCV，欢迎大家下载使用
 
 # 回归
